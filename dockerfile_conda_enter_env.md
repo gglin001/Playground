@@ -1,6 +1,6 @@
 # Enter conda env in Dockerfile
 
-```
+```Dockerfile
 # Dockerfile
 
 FROM continuumio/miniconda3
