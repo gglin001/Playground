@@ -18,3 +18,9 @@ RUN conda env list
 # CMD [ "/bin/bash" ]
 
 ```
+
+## Reference
+
+https://pythonspeed.com/articles/activate-conda-dockerfile/
+
+https://stackoverflow.com/questions/55123637/activate-conda-environment-in-docker

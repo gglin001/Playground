@@ -1,7 +1,5 @@
 # Conda use conda-forge for default channel
 
-https://conda-forge.org/docs/user/introduction.html
-
 ```bash
 # bash
 
@@ -19,3 +17,7 @@ conda config --set channel_priority strict
 # conda install opencv=3.4
 
 ```
+
+## Reference
+
+https://conda-forge.org/docs/user/introduction.html
