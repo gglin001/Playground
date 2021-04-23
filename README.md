@@ -2,6 +2,6 @@
 
 ## Snippets
 
-[enter conda env in docker file](./dockerfile_conda_enter_env.md)
+[Enter conda env in Dockerfile](./dockerfile_conda_enter_env.md)
 
 ## Scripts

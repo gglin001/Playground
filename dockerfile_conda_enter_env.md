@@ -1,6 +1,8 @@
-# enter conda env in docker file
+# Enter conda env in Dockerfile
 
 ```
+# Dockerfile
+
 FROM continuumio/miniconda3
 
 RUN conda create -n py36 python=3.6.12 -y
