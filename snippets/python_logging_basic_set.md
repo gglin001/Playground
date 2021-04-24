@@ -32,3 +32,7 @@ from /module_path/logger import logger
 logger.info(f"print a info log")
 
 ```
+
+## Reference
+
+https://www.reddit.com/r/learnpython/comments/7fbgj2/logging_is_it_typical_to_set_loggerpropagatefalse/
