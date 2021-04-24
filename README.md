@@ -10,4 +10,6 @@
 
 ## Scripts
 
-[onnx_shape_infer.py](scripts/onnx_shape_infer.py)
+[onnx_shape_infer.py](./scripts/onnx_shape_infer.py)
+
+[onnx_dump_all_use_onnxruntime.py](./scripts/onnx_dump_all_onnxruntime.py)
