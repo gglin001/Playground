@@ -1,4 +1,4 @@
-# building pytorch in vscode using cmake
+# Building pytorch in vscode using cmake
 
 ## clone repo
 

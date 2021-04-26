@@ -6,9 +6,9 @@
 
 [Conda use conda-forge for default channel](./snippets/conda_use_conda_forge.md)
 
-[python logging basic setting](./snippets/python_logging_basic_set.md)
+[Python logging basic setting](./snippets/python_logging_basic_set.md)
 
-[building pytorch in vscode using cmake](./snippets/pytorch_build_with_cmake_in_vscode.md)
+[Building pytorch in vscode using cmake](./snippets/pytorch_build_with_cmake_in_vscode.md)
 
 [Debug TVM in VSCode](./snippets/vscode_debug_tvm_mixed_python_cpp.md)
 

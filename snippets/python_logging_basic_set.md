@@ -1,4 +1,4 @@
-# python logging basic setting
+# Python logging basic setting
 
 ```python
 # logger.py
