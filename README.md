@@ -10,6 +10,8 @@
 
 [building pytorch in vscode using cmake](./snippets/pytorch_build_with_cmake_in_vscode.md)
 
+[Debug TVM in VSCode](./snippets/vscode_debug_tvm_mixed_python_cpp.md)
+
 ## Scripts
 
 [onnx_shape_infer.py](./scripts/onnx_shape_infer.py)
