@@ -14,6 +14,10 @@ git submodule update --init --recursive
 
 ```
 
+## edit `tools/setup_helpers/cmake.py`
+
+ref: https://gist.github.com/gglin001/115ab012750aeb86fbda9975fa49f47c
+
 ## `settings.json` in VSCode
 
 ```json
