@@ -33,6 +33,7 @@ git clone https://github.com/tensorflow/tensorflow
 ```bash
 
 # quick test debug
+# --copt="-g" --can_be--> -c dbg
 bazel build --copt="-O0" --copt="-g" //tensorflow/c/kernels:tensor_shape_utils_test
 
 # set breakpoint in
@@ -82,6 +83,7 @@ bazel build --copt="-O0" --copt="-g" //tensorflow/c/kernels:tensor_shape_utils_t
 ```bash
 
 # build build_pip_package
+# --copt="-g" --can_be--> -c dbg
 bazel build --copt="-O0" --copt="-g" //tensorflow/tools/pip_package:build_pip_package
 
 # gen wheel
@@ -130,6 +132,11 @@ print(a)
             "program": "/path_to/python",
             "processId": "${command:pickProcess}",
             "MIMode": "gdb",
+            // ref: https://github.com/microsoft/vscode-cpptools/issues/6019
+            // https://code.visualstudio.com/docs/cpp/cpp-debug#_locate-source-files
+            "sourceFileMap": {
+                "/proc/self/cwd/tensorflow": "/path_to/tensorflow",
+            },
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

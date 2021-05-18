@@ -2,15 +2,17 @@
 
 ## Snippets
 
-[Enter conda env in Dockerfile](./snippets/dockerfile_conda_enter_env.md)
+[Enter Conda env in Dockerfile](./snippets/dockerfile_conda_enter_env.md)
 
-[Conda use conda-forge for default channel](./snippets/conda_use_conda_forge.md)
+[Conda set conda-forge as default channel](./snippets/conda_use_conda_forge.md)
 
 [Python logging basic setting](./snippets/python_logging_basic_set.md)
 
-[Building pytorch in vscode using cmake](./snippets/pytorch_build_with_cmake_in_vscode.md)
+[Debug PyTorch in VSCode](./snippets/pytorch_build_with_cmake_in_vscode.md)
 
 [Debug TVM in VSCode](./snippets/vscode_debug_tvm_mixed_python_cpp.md)
+
+[Debug TensorFlow in VSCode](./snippets/tensorflow_debug_bazel_in_vscode.md)
 
 ## Scripts
 
