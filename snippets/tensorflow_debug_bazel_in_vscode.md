@@ -62,6 +62,9 @@ bazel build --copt="-O0" --copt="-g" //tensorflow/c/kernels:tensor_shape_utils_t
       "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
+      "sourceFileMap": {
+        "/proc/self/cwd/tensorflow": "${workspaceFolder}/tensorflow"
+      },
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -135,7 +138,7 @@ print(a)
             // ref: https://github.com/microsoft/vscode-cpptools/issues/6019
             // https://code.visualstudio.com/docs/cpp/cpp-debug#_locate-source-files
             "sourceFileMap": {
-                "/proc/self/cwd/tensorflow": "/path_to/tensorflow",
+                "/proc/self/cwd/tensorflow": "${workspaceFolder}/tensorflow",
             },
             "setupCommands": [
                 {
