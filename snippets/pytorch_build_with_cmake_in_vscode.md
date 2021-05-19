@@ -145,6 +145,29 @@ ref: https://gist.github.com/gglin001/115ab012750aeb86fbda9975fa49f47c
 }
 ```
 
+## `c_cpp_properties.json` in VSCode
+
+```json
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": [],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c11",
+      "cppStandard": "c++14",
+      "intelliSenseMode": "linux-clang-x64",
+      // use compile_commands.json
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      // use ms-vscode.cmake-tools
+      "configurationProvider": "ms-vscode.cmake-tools"
+    }
+  ],
+  "version": 4
+}
+```
+
 ## debug
 
 when building pytorch in debug mode, we can debug mixin python & cpp code

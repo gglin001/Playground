@@ -162,6 +162,8 @@ see [tf-bazel-compilation-db](https://github.com/gglin001/tf-bazel-compilation-d
 
 after running shell script, copy `bazel-tensorflow/compile_commands.json` (or other path) to `${workspaceFolder}/compile_commands.json`
 
+`c_cpp_properties.json`
+
 ```json
 {
   "configurations": [
