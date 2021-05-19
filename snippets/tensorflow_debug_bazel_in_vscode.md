@@ -33,8 +33,8 @@ git clone https://github.com/tensorflow/tensorflow
 ```bash
 
 # quick test debug
-# --copt="-g" --can_be--> -c dbg
-bazel build --copt="-O0" --copt="-g" //tensorflow/c/kernels:tensor_shape_utils_test
+# -c dbg --can_be--> --copt="-g" --strip=never
+bazel build --copt="-O0" -c dbg //tensorflow/c/kernels:tensor_shape_utils_test
 
 # set breakpoint in
 # tensorflow/c/kernels/tensor_shape_utils_test.cc
@@ -64,6 +64,7 @@ bazel build --copt="-O0" --copt="-g" //tensorflow/c/kernels:tensor_shape_utils_t
       "miDebuggerPath": "/usr/bin/gdb",
       "sourceFileMap": {
         "/proc/self/cwd/tensorflow": "${workspaceFolder}/tensorflow"
+        // "/proc/self/cwd/external": "${workspaceFolder}/bazel-tensorflow_master/external"
       },
       "setupCommands": [
         {
@@ -86,8 +87,8 @@ bazel build --copt="-O0" --copt="-g" //tensorflow/c/kernels:tensor_shape_utils_t
 ```bash
 
 # build build_pip_package
-# --copt="-g" --can_be--> -c dbg
-bazel build --copt="-O0" --copt="-g" //tensorflow/tools/pip_package:build_pip_package
+# -c dbg --can_be--> --copt="-g" --strip=never
+bazel build --copt="-O0" -c dbg  //tensorflow/tools/pip_package:build_pip_package
 
 # gen wheel
 # ./bazel-bin/tensorflow/tools/pip_package/build_pip_package ./tf_wheel
@@ -139,6 +140,7 @@ print(a)
             // https://code.visualstudio.com/docs/cpp/cpp-debug#_locate-source-files
             "sourceFileMap": {
                 "/proc/self/cwd/tensorflow": "${workspaceFolder}/tensorflow",
+                // "/proc/self/cwd/external": "${workspaceFolder}/bazel-tensorflow_master/external",
             },
             "setupCommands": [
                 {
@@ -152,4 +154,29 @@ print(a)
                 }
             ]
         },
+```
+
+## generate `compile_commands.json`
+
+see [tf-bazel-compilation-db](https://github.com/gglin001/tf-bazel-compilation-db)
+
+after running shell script, copy `bazel-tensorflow/compile_commands.json` (or other path) to `${workspaceFolder}/compile_commands.json`
+
+```json
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": [],
+      "compilerPath": "/usr/bin/clang-10",
+      "cStandard": "c11",
+      "cppStandard": "c++14",
+      "intelliSenseMode": "linux-clang-x64",
+      // use compile_commands.json
+      "compileCommands": "${workspaceFolder}/compile_commands.json"
+    }
+  ],
+  "version": 4
+}
 ```
