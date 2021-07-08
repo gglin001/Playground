@@ -14,6 +14,8 @@
 
 [Debug TensorFlow in VSCode](./snippets/tensorflow_debug_bazel_in_vscode.md)
 
+[VSCode Connect Remote Docker Container](./snippets/vscode_connect_remote_docker_container.md)
+
 ## Scripts
 
 [onnx_shape_infer.py](./scripts/onnx_shape_infer.py)
