@@ -16,6 +16,8 @@
 
 [VSCode Connect Remote Docker Container](./snippets/vscode_connect_remote_docker_container.md)
 
+[VSCode Set Terminal Env From a Script](./snippets/vscode_set_env_from_script.md)
+
 ## Scripts
 
 [onnx_shape_infer.py](./scripts/onnx_shape_infer.py)
