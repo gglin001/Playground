@@ -18,6 +18,8 @@
 
 [VSCode Set Terminal Env From a Script](./snippets/vscode_set_env_from_script.md)
 
+[VSCode Hide Top-Right Icons](./vscode_hide_top_right_icons.md)
+
 ## Scripts
 
 [onnx_shape_infer.py](./scripts/onnx_shape_infer.py)
