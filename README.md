@@ -18,7 +18,7 @@
 
 [VSCode Set Terminal Env From a Script](./snippets/vscode_set_env_from_script.md)
 
-[VSCode Hide Top-Right Icons](./vscode_hide_top_right_icons.md)
+[VSCode Hide Top-Right Icons](./snippets/vscode_hide_top_right_icons.md)
 
 ## Scripts
 
